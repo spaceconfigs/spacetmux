@@ -8,8 +8,5 @@ echo "-------------> Installing $PROGRAM"
 #$pminstall ghostscript
 
 echo "-------------> Configurando $PROGRAM"
-mkdir -p $HOME/.config/$CONFIG_FOLDER/
-mkdir -p $HOME/.local/share/tmux
-
-ln -sf $(pwd)/$PROGRAM/* $HOME/.config/$CONFIG_FOLDER/
+ln -sf $(pwd) $HOME/.config/$CONFIG_FOLDER
 git clone https://github.com/tmux-plugins/tpm ~/.local/share/tmux/plugins
